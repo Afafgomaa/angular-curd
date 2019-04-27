@@ -1,0 +1,24 @@
+.imageClass{
+    width:200px;
+    height:200px;
+}
+.vertical-align{
+    display: flex;
+    align-items: center;
+}
+.panel-primary{
+  border:2px solid blue;
+  margin: 20px 0;
+}
+.panel-heading{
+  background-color: blue;
+}
+.panel-body{
+  margin-left: 20px;
+}
+.panel-success .panel-heading{
+  background-color: lightgreen;
+}
+.panel {
+  cursor: pointer;
+}

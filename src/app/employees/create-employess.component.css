@@ -1,0 +1,7 @@
+.form-check{
+  display: inline;
+}
+.has-error label, .has-error input{
+  color: #dc3545;
+  border-color: #dc3545;
+}

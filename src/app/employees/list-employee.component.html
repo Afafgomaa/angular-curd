@@ -1,0 +1,21 @@
+<h1 #h1Varable></h1>
+<div class="form-group">
+  <input type="text" class="form-control"  placeholder="Serach for employee by name" [(ngModel)]="serachstring">
+</div>
+ <div *ngFor="let employee of filteremployee">
+   <!-- | employeeFilterPipe:searchTerm-->
+   <!--(click)="h1Varable.innerHTML= childCompoenet.getnameandage() "-->
+   <div (click)="onclick(employee.id)">
+<app-display [employee]="employee" (notify)="handelnotyfi($event)" #childCompoenet>
+</app-display>
+</div>
+
+</div>
+
+<!--
+<button type="button" (click)="nextEmployee()" class="btn btn-primary">
+  view next employe
+</button>
+<br>
+<app-display [employee]="employeeTodisplay"></app-display>
+-->
